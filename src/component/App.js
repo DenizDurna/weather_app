@@ -14,7 +14,9 @@ function App() {
   // Api sorgusu alanı
   useEffect(() => {
     const getApi =
+      
       async () => {
+        if(apiKey !==null || value !=="" ){
         try {
           const response = await axios.get(
             `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&lang=tr&units=metric`
@@ -22,7 +24,7 @@ function App() {
           dispatch(setShow(true));
           dispatch(setApiData(response.data));
           dispatch(setCod(""));
-          sessionStorage.setItem("refresh", "false");
+          sessionStorage.setItem("refresh", false);
 
         } catch (error) {
           if (apiKey === "" || value === "") {
@@ -36,10 +38,10 @@ function App() {
             dispatch(setCod(error.response.data.cod));
           }
         }
-      }
-    if (value !== "" || apiKey !== "") {
+      }}
+    
       getApi();
-    }
+    
   }, [apiKey, city]);
 
 

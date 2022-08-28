@@ -18,7 +18,7 @@ function Welcome() {
   return (
     <div className="container">
       <div className="d-flex justify-content-center">
-        <div className="card p-3 text-center opacity-75 bg-secondary m-auto">
+        <div className="card p-3 text-center  bg-secondary m-auto">
           <label className="m-3 h2 text-info" htmlFor="login">
             Lütfen Api Keyinizi Giriniz
           </label>

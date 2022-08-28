@@ -23,7 +23,6 @@ function Weather(props) {
           <h1>Hava Durumu</h1>
           <select
             className="form-select mb-2 text-center"
-            onfocus='size=10;'
             value={city}
             onChange={cityChange}
           >
