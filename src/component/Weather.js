@@ -1,13 +1,12 @@
 import "../css/Weather.css";
 import { useSelector, useDispatch } from "react-redux";
 import { setCity } from "../stores/weatherSlice";
-import cityName from "../constant/cityNames.constant.json"
-import days from "../constant/daysNames.constant.json"
+import CITYNAMES from "../constant/cityNames.constant.json"
+import DAYS from "../constant/daysNames.constant.json"
 
 // Gün ve tarih 
-const day = days[new Date().getDay() - 1];
+const day = DAYS[new Date().getDay() - 1];
 let date = new Date().toLocaleDateString();
-
 
 function Weather(props) {
   const { city, apiData } = useSelector((state) => state.weather);
@@ -26,7 +25,7 @@ function Weather(props) {
             value={city}
             onChange={cityChange}
           >
-            {cityName.map((cityy) => {
+            {CITYNAMES.map((cityy) => {
               return (
                 <option key={cityy.id} value={cityy.name}>
                   {cityy.name}
