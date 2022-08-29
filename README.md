@@ -23,4 +23,4 @@ komutuyla projeyi başlatabilirsiniz. http://localhost:3000/ adresinden local de
 
 
 
-### Api Key: ac98ac0b376740d8a1151045b63cd056
+### Api Key: baa40097fed2963de4d53e805ba0d271
