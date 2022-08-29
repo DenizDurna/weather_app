@@ -1,3 +1,5 @@
+Live ===> https://effortless-marshmallow-83f222.netlify.app/
+
 
 # HavaDurumuUygulaması
 *  Hava Durumu Uygulamasının Amacı seçilen konumun anlık hava durumu bilgisini servemisidir.
@@ -7,6 +9,18 @@
 *  Seçim yapıldıktan sonra ilgili ilin hava durumu bilgisine ulaşabilirsiniz.
 *  Api key ile giriş yaptıktan sonra sunucu tarafında hata oluşması durumunda sizi hata sayfasına yönlendirecektir.
 *  Giriş yaptıktan sonra sayfanın yenilenmesi durumunda tekrar giriş yapmaya gerek yoktur, tarayıcı kapatılır veya yeni sekme açılırsa tekrar Api key isteyecektir.
-*  Local de çalışması için React Js, Bostrap, Redux kütüphaneleri yüklü olması gerekmektedir.
-*  Kütüphaneler yüklüyse klasör ana dizininde npm start komutunu vererek uygulamayı başlatabilirsiniz.
+
  
+## Local de çalışmak için
+İlgili dosyayı indirdikten sonra terminale ilgili dizinde 
+### npm install
+komutuyla npm kurulumunu gerçekleştirniz.
+### npm run build
+komutuyla dosyayı porjeyi build edebilir.
+### npm rn start
+komutuyla projeyi başlatabilirsiniz. http://localhost:3000/ adresinden local de  hava durumu uygulamasına ulaşabilirsiniz.
+
+
+
+
+### Api Key: ac98ac0b376740d8a1151045b63cd056
